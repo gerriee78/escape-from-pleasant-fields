@@ -7651,6 +7651,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.1052628
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a94aec0f1eb5d7c4b8dfe16f7fe7b821, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a372ad03f56ab5942937a51afe3296c3, type: 2}
     - target: {fileID: 919132149155446097, guid: a94aec0f1eb5d7c4b8dfe16f7fe7b821, type: 3}
       propertyPath: m_Name
       value: loungeDesignSofa
