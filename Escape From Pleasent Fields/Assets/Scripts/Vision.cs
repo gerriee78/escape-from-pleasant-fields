@@ -9,6 +9,7 @@ public class Vision : MonoBehaviour
     [SerializeField]
     [Tooltip("How far can it see")]
     public float seeDistance;
+    public float visionAngle;
 
     Transform player;
     
@@ -16,8 +17,6 @@ public class Vision : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
-
     }
 
     // Update is called once per frame
@@ -31,12 +30,16 @@ public class Vision : MonoBehaviour
         //Calculate distance without y axis. 
         Vector3 distance = transform.position - new Vector3(player.position.x, transform.position.y, player.position.z);
         float Distance = distance.magnitude;
-        Debug.Log(Distance);
+        //Debug.Log(Distance);
         
-        
+        //Calculate angle without y axis.
+        float angle = Vector3.Angle(Vector3.forward, -distance);
+        Debug.Log(angle);
+
+
 
         //check if the player is within vision range of the nurse.
-        if (Distance < seeDistance && lineinfo.collider.tag == "Player")
+        if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)
         {
             Debug.DrawLine(transform.position, player.position, Color.blue);
         }
@@ -44,7 +47,5 @@ public class Vision : MonoBehaviour
         {
             Debug.DrawLine(transform.position, player.position, Color.red);
         }
-
-
     }
 }
