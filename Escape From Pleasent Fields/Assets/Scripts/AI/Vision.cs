@@ -41,11 +41,8 @@ public class Vision : MonoBehaviour
         coneMat.SetFloat("Angle", Mathf.Lerp(-50, 0, Mathf.InverseLerp(0, 180, visionAngle)));
         visionCone.transform.localScale = new Vector3(12.5f * seeDistance, 12.5f * seeDistance, visionCone.transform.localScale.z);
 
-       
+
         
-
-
-
         //Calculate distance without y axis. 
         Vector3 distance = transform.position - new Vector3(player.position.x, transform.position.y, player.position.z);
         float Distance = distance.magnitude;
