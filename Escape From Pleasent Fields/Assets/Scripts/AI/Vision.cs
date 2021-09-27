@@ -41,11 +41,8 @@ public class Vision : MonoBehaviour
         coneMat.SetFloat("Angle", Mathf.Lerp(-50, 0, Mathf.InverseLerp(0, 180, visionAngle)));
         visionCone.transform.localScale = new Vector3(12.5f * seeDistance, 12.5f * seeDistance, visionCone.transform.localScale.z);
 
-       
+
         
-
-
-
         //Calculate distance without y axis. 
         Vector3 distance = transform.position - new Vector3(player.position.x, transform.position.y, player.position.z);
         float Distance = distance.magnitude;
@@ -53,7 +50,7 @@ public class Vision : MonoBehaviour
         
         //Calculate angle without y axis.
         float angle = Vector3.Angle(transform.forward, -distance);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         //if the player is seens
         if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)

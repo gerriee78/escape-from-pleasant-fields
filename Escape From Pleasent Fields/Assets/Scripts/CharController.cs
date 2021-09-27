@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
+    [SerializeField]
     float moverSpeed = 4f;
 
     Vector3 forward, right;
@@ -27,15 +28,11 @@ public class CharController : MonoBehaviour
     void Move()
     {
         Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
-        Vector3 rightMovement = right * moverSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-        Vector3 upMovement = forward * moverSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+        direction = direction.normalized;
+        transform.Translate(direction * moverSpeed * Time.deltaTime);
 
-        Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
-
-        transform.forward = heading;
-        transform.position += rightMovement;
-        transform.position += upMovement;
-
+        
+        
 
     }
 
