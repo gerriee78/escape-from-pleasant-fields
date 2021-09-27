@@ -50,7 +50,7 @@ public class Vision : MonoBehaviour
         
         //Calculate angle without y axis.
         float angle = Vector3.Angle(transform.forward, -distance);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         //if the player is seens
         if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)
