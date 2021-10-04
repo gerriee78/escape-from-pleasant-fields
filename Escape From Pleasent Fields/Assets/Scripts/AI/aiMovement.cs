@@ -48,6 +48,7 @@ public class aiMovement : MonoBehaviour
                 {
                     CurrentPoint = 0;
                 }
+                Debug.Log(CurrentPoint);
             }
             agent.destination = PatrolPoints[CurrentPoint].position;
         }
