@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5650834176620222581}
   - component: {fileID: 5650834176620222578}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 5650834178355405228}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: DetectionMeter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70eb1805f4a218142a3c6dd8966ed8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DetectionLevel: 0.29
+  DetectionLevel: 1
+  IsSeen: 0
+  healingAmount: 0.1
 --- !u!114 &5650834178355405228
 MonoBehaviour:
   m_ObjectHideFlags: 0
