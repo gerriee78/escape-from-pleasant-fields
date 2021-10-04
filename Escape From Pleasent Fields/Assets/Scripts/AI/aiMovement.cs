@@ -40,7 +40,7 @@ public class aiMovement : MonoBehaviour
         if (movementType == MovementType.Patrol)
         {
             //If the player is at the target destination, set the next point in the array to be the current destination.
-            if (Mathf.Round(transform.position.x * 100) / 100 == Mathf.Round(PatrolPoints[CurrentPoint].position.x * 100) / 100 && Mathf.Round(transform.position.x * 100) / 100 == Mathf.Round(PatrolPoints[CurrentPoint].position.x * 100) / 100)
+            if (Mathf.Round(transform.position.x * 100) / 100 == Mathf.Round(PatrolPoints[CurrentPoint].position.x * 100) / 100 && Mathf.Round(transform.position.z * 100) / 100 == Mathf.Round(PatrolPoints[CurrentPoint].position.z * 100) / 100)
             {
                 
                 CurrentPoint++;
@@ -48,7 +48,7 @@ public class aiMovement : MonoBehaviour
                 {
                     CurrentPoint = 0;
                 }
-                Debug.Log(CurrentPoint);
+                
             }
             agent.destination = PatrolPoints[CurrentPoint].position;
         }
