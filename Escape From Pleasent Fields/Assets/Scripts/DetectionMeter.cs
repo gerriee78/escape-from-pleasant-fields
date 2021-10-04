@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 public class DetectionMeter : MonoBehaviour
 {
     public float DetectionLevel;
-    Image image; 
-
-
+    public bool IsSeen;
+    Image image;
+    [SerializeField]
+    float healingAmount;
     private void Start()
     {
         image = GetComponent<Image>();
     }
+
     private void Update()
     {
         image.fillAmount = DetectionLevel;
@@ -21,6 +23,10 @@ public class DetectionMeter : MonoBehaviour
         {
             //reload scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if(IsSeen == false)
+        {
+            DetectionLevel += healingAmount * Time.deltaTime;
         }
     }
    

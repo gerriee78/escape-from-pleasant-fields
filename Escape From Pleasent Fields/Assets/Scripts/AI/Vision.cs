@@ -10,6 +10,8 @@ public class Vision : MonoBehaviour
     [Tooltip("How far can it see")]
     public float seeDistance;
     public float visionAngle;
+    [HideInInspector]
+    public bool LOS;
 
     [SerializeField]
     GameObject visionCone;
@@ -56,9 +58,11 @@ public class Vision : MonoBehaviour
         if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)
         {
             Debug.DrawLine(transform.position, player.position, Color.blue);
+            LOS = true;
         }
         else
         {
+            LOS = false;
             Debug.DrawLine(transform.position, player.position, Color.red);
         }
     }
