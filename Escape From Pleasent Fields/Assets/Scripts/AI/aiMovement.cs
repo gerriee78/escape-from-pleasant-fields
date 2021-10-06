@@ -20,7 +20,7 @@ public class aiMovement : MonoBehaviour
     float SwivelSpeed;
     [SerializeField]
     float SwivelAngle;
-
+    bool SwivelTracker;
     float swivelDirection = 1;
     Vector2 direction;
     NavMeshAgent agent;
@@ -58,11 +58,15 @@ public class aiMovement : MonoBehaviour
             transform.Rotate(new Vector3(0, swivelDirection* SwivelSpeed * Time.deltaTime, 0));
             Vector3 foward = transform.forward;
             Debug.Log(Vector2.Angle(new Vector2(foward.x, foward.z), direction));
-            if (Vector2.Angle(new Vector2(foward.x, foward.z), direction) >= SwivelAngle - 1)
+            if (Vector2.Angle(new Vector2(foward.x, foward.z), direction) >= SwivelAngle && SwivelTracker == false)
             {
-                swivelDirection *= -1; 
+                swivelDirection *= -1;
+                SwivelTracker = true;
             }
-
+            else if(Vector2.Angle(new Vector2(foward.x, foward.z), direction) < SwivelAngle)
+            {
+                SwivelTracker = false;
+            }
         }
 
 
