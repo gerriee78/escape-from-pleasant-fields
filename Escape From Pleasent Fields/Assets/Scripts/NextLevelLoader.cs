@@ -9,7 +9,7 @@ public class NextLevelLoader : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.sceneCount + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
 
