@@ -28,6 +28,7 @@ public class DetectionMeter : MonoBehaviour
         {
             DetectionLevel += healingAmount * Time.deltaTime;
             DetectionLevel = Mathf.Clamp(DetectionLevel, 0, 1);
+            Debug.Log(DetectionLevel);
         }
     }
    

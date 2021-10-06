@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AiConditions : MonoBehaviour
 {
- enum AiCondition {StayStill,KeepMoving,Unconditional,Call,Heal,Invincibility}
+ enum AiCondition {StayStill,KeepMoving,Unconditional,Call,Heal}
     [SerializeField]
     AiCondition Condition;
     [SerializeField]
@@ -33,6 +33,10 @@ public class AiConditions : MonoBehaviour
         else if (Condition == AiCondition.Unconditional)
         {
             SR.color = new Vector4(0.6320754f, 0.1633855f, 0.1633855f, 1);
+        }
+        else if (Condition == AiCondition.Heal)
+        {
+            SR.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 1);
         }
     }
 
@@ -63,7 +67,10 @@ public class AiConditions : MonoBehaviour
             {
                 health.DetectionLevel = health.DetectionLevel - damage * Time.deltaTime;
             }
-
+            else if (Condition == AiCondition.Heal) 
+            {
+                health.DetectionLevel = health.DetectionLevel + damage * Time.deltaTime;
+            }
         }
 
 
