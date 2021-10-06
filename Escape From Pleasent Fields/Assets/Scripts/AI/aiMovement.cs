@@ -57,7 +57,7 @@ public class aiMovement : MonoBehaviour
             //apply rotation in direction
             transform.Rotate(new Vector3(0, swivelDirection* SwivelSpeed * Time.deltaTime, 0));
             Vector3 foward = transform.forward;
-            Debug.Log(Vector2.Angle(new Vector2(foward.x, foward.z), direction));
+            //Debug.Log(Vector2.Angle(new Vector2(foward.x, foward.z), direction));
             if (Vector2.Angle(new Vector2(foward.x, foward.z), direction) >= SwivelAngle && SwivelTracker == false)
             {
                 swivelDirection *= -1;
