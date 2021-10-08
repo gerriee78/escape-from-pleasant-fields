@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour
+public class TimerScript : MonoBehaviour
 {
     public float timer = 10f;
     private Text timerSeconds;
