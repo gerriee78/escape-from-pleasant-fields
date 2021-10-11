@@ -57,7 +57,7 @@ public class AiConditions : MonoBehaviour
             }
             else if (Condition == AiCondition.KeepMoving)
             {
-                if (Input.GetAxis("HorizontalKey") + Input.GetAxis("VerticalKey") == 0)
+                if (Mathf.Abs(Input.GetAxisRaw("HorizontalKey"))  + Mathf.Abs(Input.GetAxisRaw("VerticalKey")) == 0)
                 {
                     health.DetectionLevel = health.DetectionLevel - damage * Time.deltaTime;
 
