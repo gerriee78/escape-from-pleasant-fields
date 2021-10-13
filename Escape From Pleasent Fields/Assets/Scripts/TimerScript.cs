@@ -25,8 +25,6 @@ public class TimerScript : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-
-        //show number with decimals (this is just to make it seem faster/more urgent)
         int FrontNum = Mathf.RoundToInt(timer);
         float Number = Mathf.Round(timer*10) / 10;
 
