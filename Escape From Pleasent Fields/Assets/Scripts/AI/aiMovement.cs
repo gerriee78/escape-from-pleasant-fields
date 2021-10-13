@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEditor.AnimatedValues;
+
 public class aiMovement : MonoBehaviour
 {
     
