@@ -5,7 +5,8 @@ public class cameraFollow : MonoBehaviour
 {
 	public Transform target;
 	public float smoothing = 5f;
-	Vector3 offset;
+    [SerializeField] private Vector3 TargetOffset;
+    Vector3 offset;
 
 	// Use this for initialization
 	void Start()
@@ -16,7 +17,8 @@ public class cameraFollow : MonoBehaviour
 	// Update is called once per frame
 	void LateUpdate()
 	{
-		Vector3 targetCamPos = target.position + offset;
+        
+        Vector3 targetCamPos = target.position + offset+TargetOffset;
 		transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
 	}
 }
