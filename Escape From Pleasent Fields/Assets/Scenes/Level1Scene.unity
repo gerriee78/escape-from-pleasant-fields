@@ -942,7 +942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1463533457}
   smoothing: 5
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 0, z: 0.51}
 --- !u!81 &105512857
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1098,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5650834176620222582, guid: c3c6cf41ce8d2fc4ab739b821c38c4f6, type: 3}
       propertyPath: moverSpeed
-      value: 5
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 5650834177336706214, guid: c3c6cf41ce8d2fc4ab739b821c38c4f6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -17000,14 +17000,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828700250}
-  m_LocalRotation: {x: 0.27781588, y: 0.36497167, z: -0.1150751, w: 0.8811196}
-  m_LocalPosition: {x: -109.37262, y: -6, z: 63.859978}
+  m_LocalRotation: {x: 0.41147256, y: 0.5750568, z: -0.41147256, w: 0.5750568}
+  m_LocalPosition: {x: -110, y: -15.5, z: 50.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 105512854}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 35, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 71.17, y: 90, z: 0}
 --- !u!1001 &1832942826
 PrefabInstance:
   m_ObjectHideFlags: 0
