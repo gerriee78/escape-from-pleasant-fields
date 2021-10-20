@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class NextLevelLoader : MonoBehaviour
 {
-    public bool key = false;
+    public float KeyAmount = 0;
+    [SerializeField] private float _requiredKeyAmount;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && key == true)
+        if (other.tag == "Player" && KeyAmount >= _requiredKeyAmount)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

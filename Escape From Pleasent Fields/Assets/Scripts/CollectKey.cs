@@ -10,7 +10,7 @@ public class CollectKey : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Cube.GetComponent<NextLevelLoader>().key = true;
+            Cube.GetComponent<NextLevelLoader>().KeyAmount++;
             Destroy(gameObject);
         }
     }
