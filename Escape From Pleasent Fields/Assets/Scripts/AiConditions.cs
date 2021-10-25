@@ -24,19 +24,19 @@ public class AiConditions : MonoBehaviour
 
         if (Condition == AiCondition.StayStill)
         {
-            SR.color = new Vector4(0, 0.6039216f, 0.5568628f, 1);
+            SR.color = new Vector4(0, 0.6039216f, 0.5568628f, 0.6f);
         }
         else if (Condition == AiCondition.KeepMoving)
         {
-            SR.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 1);
+            SR.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 0.6f);
         }
         else if (Condition == AiCondition.Unconditional)
         {
-            SR.color = new Vector4(0.6320754f, 0.1633855f, 0.1633855f, 1);
+            SR.color = new Vector4(0.6320754f, 0.1633855f, 0.1633855f, 0.6f);
         }
         else if (Condition == AiCondition.Heal)
         {
-            SR.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 1);
+            SR.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 0.6f);
         }
     }
 
