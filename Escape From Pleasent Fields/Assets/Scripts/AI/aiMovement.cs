@@ -46,6 +46,7 @@ public class aiMovement : MonoBehaviour
                 CurrentPoint++;
                 if (CurrentPoint > PatrolPoints.Length - 1)
                 {
+                    
                     CurrentPoint = 0;
                 }
                 
