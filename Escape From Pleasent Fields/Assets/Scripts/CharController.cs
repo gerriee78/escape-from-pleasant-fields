@@ -7,16 +7,16 @@ public class CharController : MonoBehaviour
     [SerializeField]
     float moverSpeed = 4f;
     
-
+    [SerializeField]
     private Transform model;
     Vector3 forward, right;
 
     // Start is called before the first frame update
     void Start()
     {
-        model = GameObject.
-        forward = Camera.main.transform.forward;
-        forward.y = 0;
+        //model = GameObject.
+        //forward = Camera.main.transform.forward;
+        //forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
