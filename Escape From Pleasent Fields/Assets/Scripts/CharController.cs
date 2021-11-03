@@ -6,12 +6,15 @@ public class CharController : MonoBehaviour
 {
     [SerializeField]
     float moverSpeed = 4f;
+    
 
+    private Transform model;
     Vector3 forward, right;
 
     // Start is called before the first frame update
     void Start()
     {
+        model = GameObject.
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
@@ -30,7 +33,7 @@ public class CharController : MonoBehaviour
         Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
         direction = direction.normalized;
         transform.Translate(direction * moverSpeed * Time.deltaTime);
-
+        
         
         
 

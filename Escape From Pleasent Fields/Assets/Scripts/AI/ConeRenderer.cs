@@ -7,7 +7,9 @@ public class ConeRenderer : MonoBehaviour
 {
     private Mesh mesh;
     private float fov;
-
+    [SerializeField] private Transform zero;
+    [SerializeField] private Transform ConeOrigin;
+    [SerializeField] private Vision NurseSettings;
 
     [SerializeField] private Vector3 rotation;
 
@@ -17,12 +19,9 @@ public class ConeRenderer : MonoBehaviour
         fov = NurseSettings.visionAngle * 2;
 
         mesh = new Mesh();
-        transform.position = Vector3.zero;
         GetComponent<MeshFilter>().mesh = mesh;
     }
 
-    [SerializeField] private Transform ConeOrigin;
-    [SerializeField] private Vision NurseSettings;
 
 
 
@@ -33,6 +32,7 @@ public class ConeRenderer : MonoBehaviour
     private void Update()
     {
         //meshstuff
+        transform.position = Vector3.zero;
         
 
         Vector3 origin = ConeOrigin.transform.position;
@@ -94,8 +94,11 @@ public class ConeRenderer : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
-
+        mesh.RecalculateBounds();
     }
+
+    
+
 
     public static Vector3 GetVectorFromAngle(float angle)
     {

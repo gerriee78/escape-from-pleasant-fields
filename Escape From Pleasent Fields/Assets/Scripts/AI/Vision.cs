@@ -77,7 +77,7 @@ public class Vision : MonoBehaviour
         float angle = Vector3.Angle(transform.forward, -distance);
         //Debug.Log(angle);
 
-        //if the player is seens
+        //if the player is seen
         if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)
         {
             Debug.DrawLine(transform.position, player.position, Color.blue);

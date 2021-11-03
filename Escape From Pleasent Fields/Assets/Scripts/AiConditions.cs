@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,45 +10,140 @@ public class AiConditions : MonoBehaviour
     AiCondition Condition;
     [SerializeField]
     float damage;
-
+    [SerializeField]
     SpriteRenderer SR;
+    [SerializeField]
     Vision vision;
     DetectionMeter health;
     bool visionBuffer;
-
-    [SerializeField] private ConeRenderer CR;
+    [SerializeField]
+    private ConeRenderer CR;
     private Material CRmat;
+    private Material SRmat;
 
 
     private void Start()
     {
-        CRmat = CR.gameObject.GetComponent<Renderer>().material;
+        vision = GetComponent<Vision>();
+        health = GameObject.FindGameObjectWithTag("DetectionMeter").GetComponent<DetectionMeter>();
+        if (CR == null)
+        {
+            try
+            {
+                SR = gameObject.GetComponentInChildren<SpriteRenderer>();
 
-        SR = gameObject.GetComponentInChildren<SpriteRenderer>();
+                SRmat = SR.material;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            try
+            {
+                CR = transform.parent.GetComponentInChildren<ConeRenderer>();
+                CRmat = CR.gameObject.GetComponent<Renderer>().material;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+
+
+        }
+        try
+        {
+            SR = gameObject.GetComponentInChildren<SpriteRenderer>();
+
+            SRmat = SR.material;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+        try
+        {
+            CR = transform.parent.GetComponentInChildren<ConeRenderer>();
+            CRmat = CR.gameObject.GetComponent<Renderer>().material;
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+        
         vision = GetComponent<Vision>();
         health = GameObject.FindGameObjectWithTag("DetectionMeter").GetComponent<DetectionMeter>();
 
+
         if (Condition == AiCondition.StayStill)
         {
-            CRmat.color = new Vector4(0, 0.6039216f, 0.5568628f, 0.6f);
+            try
+            {
+                CRmat.color = new Vector4(0, 0.6039216f, 0.5568628f, 0.6f);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            SR.color = new Vector4(0, 0.6039216f, 0.5568628f, 0.6f);
         }
         else if (Condition == AiCondition.KeepMoving)
         {
-            CRmat.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 0.6f);
+
+            try
+            {
+
+                CRmat.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 0.6f);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
+            SR.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 0.6f);
+
         }
         else if (Condition == AiCondition.Unconditional)
         {
-            CRmat.color = new Vector4(0.6320754f, 0.1633855f, 0.1633855f, 0.6f);
+            try
+            {
+                CRmat.color = new Vector4(0.6320754f, 0.1633855f, 0.1633855f, 0.6f);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            SR.color = new Vector4(0.8113208f, 0.4837631f, 0.1637949f, 0.6f);
+
         }
         else if (Condition == AiCondition.Heal)
         {
-            CRmat.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 0.6f);
+            try
+            {
+                CRmat.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 0.6f);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            SR.color = new Vector4(0.1576159f, 0.3867925f, 0.151068f, 0.6f);
         }
     }
 
 
     private void Update()
     {
+
         if (vision.LOS == true)
         {
             visionBuffer = true;

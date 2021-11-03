@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
         _spawnTime = _spawnTime - Time.deltaTime;
         if (_spawnTime < 0)
         {
-            GameObject ble = GameObject.Instantiate(_nurse,gameObject.transform);
+            GameObject ble = GameObject.Instantiate(_nurse,gameObject.transform.position,new Quaternion(0,0,0,0));
             ble.transform.position = _spawnPosition.position;
             _spawnTime = _spawnTimer;
         }
