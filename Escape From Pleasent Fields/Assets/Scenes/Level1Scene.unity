@@ -3448,6 +3448,10 @@ PrefabInstance:
       propertyPath: PatrolPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1187229730}
+    - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: interactable.m_Bits
+      value: 563
+      objectReference: {fileID: 0}
     - target: {fileID: 844293683827784456, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.880001
@@ -4794,6 +4798,7 @@ MonoBehaviour:
   visionAngle: 125
   LOS: 0
   visionCone: {fileID: 116245749}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -6931,6 +6936,7 @@ MonoBehaviour:
   visionAngle: 125
   LOS: 0
   visionCone: {fileID: 296230371}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -13293,6 +13299,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 1835578104}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -27444,6 +27451,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 108212198}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -53909,6 +53917,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 1763150821}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -72388,6 +72397,7 @@ MonoBehaviour:
   visionAngle: 125
   LOS: 0
   visionCone: {fileID: 1670438255}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -78915,6 +78925,7 @@ MonoBehaviour:
   visionAngle: 15
   LOS: 0
   visionCone: {fileID: 2103789908}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -88275,6 +88286,7 @@ MonoBehaviour:
   visionAngle: 125
   LOS: 0
   visionCone: {fileID: 1882424720}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -91909,6 +91921,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 1124008857}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -93481,6 +93494,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 2058152620}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -99740,6 +99754,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 1664649568}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -112570,6 +112585,7 @@ MonoBehaviour:
   visionAngle: 20
   LOS: 0
   visionCone: {fileID: 1897397886}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0
@@ -114404,6 +114420,7 @@ MonoBehaviour:
   visionAngle: 125
   LOS: 0
   visionCone: {fileID: 1896790865}
+  player: {fileID: 0}
   visionblocker:
     serializedVersion: 2
     m_Bits: 0

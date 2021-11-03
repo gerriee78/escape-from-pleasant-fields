@@ -7,8 +7,8 @@ public class CharController : MonoBehaviour
     [SerializeField]
     float moverSpeed = 4f;
     
-    [SerializeField]
-    private Transform model;
+    //[SerializeField]
+    //private Transform model;
     Vector3 forward, right;
 
     // Start is called before the first frame update

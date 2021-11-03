@@ -1425,6 +1425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -1487,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: damage
@@ -2499,6 +2503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -2541,7 +2549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722063, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_Enabled
@@ -3745,6 +3753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -3881,6 +3893,10 @@ PrefabInstance:
       propertyPath: PatrolPoints.Array.data[31]
       value: 
       objectReference: {fileID: 1183332688}
+    - target: {fileID: 844293683644722059, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: movementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: visionblocker.m_Bits
       value: 256
@@ -3895,7 +3911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 7045114575389328694, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_Enabled
@@ -5378,6 +5394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -5444,7 +5464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: damage
@@ -5923,6 +5943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -5973,7 +5997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
@@ -6460,6 +6484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -6502,7 +6530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
@@ -8028,6 +8056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -8078,7 +8110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -14642,6 +14674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -14792,7 +14828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -16940,6 +16976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -17076,6 +17116,10 @@ PrefabInstance:
       propertyPath: PatrolPoints.Array.data[31]
       value: 
       objectReference: {fileID: 1183332688}
+    - target: {fileID: 844293683644722059, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: movementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: visionblocker.m_Bits
       value: 256
@@ -17090,7 +17134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 7045114575389328694, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_Enabled
@@ -20296,6 +20340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -20370,7 +20418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 7045114575389328694, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_Enabled
@@ -24678,6 +24726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -24836,7 +24888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -65348,6 +65400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -65398,7 +65454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -67854,6 +67910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -67904,7 +67964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -68537,6 +68597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -68587,7 +68651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -68722,6 +68786,10 @@ PrefabInstance:
     - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_Name
       value: Nurse template (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68873,7 +68941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -69797,6 +69865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -69839,7 +69911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
@@ -70408,6 +70480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -70470,7 +70546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -73988,6 +74064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -74038,7 +74118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     - target: {fileID: 8396542522254164359, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: Condition
@@ -77153,6 +77233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nurse template (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 844293682643437561, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 844293682793364064, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
@@ -77195,7 +77279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844293683644722062, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}
       propertyPath: interactable.m_Bits
-      value: 307
+      value: 819
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a470f89e4a9f046bb208d637d1305c, type: 3}

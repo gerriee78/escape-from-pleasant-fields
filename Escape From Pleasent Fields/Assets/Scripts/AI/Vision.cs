@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ public class Vision : MonoBehaviour
     [SerializeField]
     GameObject visionCone;
     Material coneMat;
+    [SerializeField]
     Transform player;
     [SerializeField]
     LayerMask visionblocker;
@@ -28,9 +30,17 @@ public class Vision : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        
-        Renderer coneRender = visionCone.GetComponent<Renderer>();
-        coneMat = coneRender.material;
+        try
+        {
+            Renderer coneRender = visionCone.GetComponent<Renderer>();
+            coneMat = coneRender.material;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+   
         
         //meshstuff
         Mesh mesh = new Mesh();
@@ -59,13 +69,22 @@ public class Vision : MonoBehaviour
     {
         //Linecast to the player to check if the player is within vision 
         Debug.DrawRay(transform.position, transform.forward * 1, Color.magenta);
-        RaycastHit lineinfo;
-        Physics.Linecast(transform.position, player.transform.position, out lineinfo, interactable);
+        Physics.Linecast(transform.position, player.transform.position, out var lineinfo, interactable);
 
+        
+
+        Debug.Log(lineinfo.transform + " -- " + lineinfo.distance);
         //Update vision cone shader to match set angle and distance.
-        coneMat.SetFloat("Angle", Mathf.Lerp(-50, 0, Mathf.InverseLerp(0, 180, visionAngle)));
-        visionCone.transform.localScale = new Vector3(12.5f * seeDistance, 12.5f * seeDistance, visionCone.transform.localScale.z);
-
+        try
+        {
+            coneMat.SetFloat("Angle", Mathf.Lerp(-50, 0, Mathf.InverseLerp(0, 180, visionAngle)));
+            visionCone.transform.localScale = new Vector3(12.5f * seeDistance, 12.5f * seeDistance, visionCone.transform.localScale.z);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
 
         
         //Calculate distance without y axis. 
@@ -78,6 +97,9 @@ public class Vision : MonoBehaviour
         //Debug.Log(angle);
 
         //if the player is seen
+        
+
+        Debug.Log(lineinfo.collider.tag);
         if (Distance < seeDistance && lineinfo.collider.tag == "Player" && angle < visionAngle)
         {
             Debug.DrawLine(transform.position, player.position, Color.blue);
