@@ -10,7 +10,8 @@ public class CharController : MonoBehaviour
     //[SerializeField]
     //private Transform model;
     Vector3 forward, right;
-
+    [SerializeField]
+    private Transform model;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class CharController : MonoBehaviour
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
-        //model.rotation = Quaternion.RotateTowards(forward);
+        
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
 
@@ -31,6 +32,8 @@ public class CharController : MonoBehaviour
 
     void Move()
     {
+
+        //model.rotation = Quaternion.RotateTowards()
         Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
         direction = direction.normalized;
         transform.Translate(direction * moverSpeed * Time.deltaTime);
