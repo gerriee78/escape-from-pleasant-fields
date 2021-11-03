@@ -14,10 +14,11 @@ public class CharController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //model = GameObject.
-        //forward = Camera.main.transform.forward;
-        //forward.y = 0;
+        
+        forward = Camera.main.transform.forward;
+        forward.y = 0;
         forward = Vector3.Normalize(forward);
+        //model.rotation = Quaternion.RotateTowards(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
 
